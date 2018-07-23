@@ -41,17 +41,17 @@ class Contact extends Component {
 
                   <div>
 						   <label htmlFor="contactName">Name <span className="required">*</span></label>
-						   <input type="text" value="" size="35" id="contactName" problemsolver="contactName" />
+						   <input type="text" defaultValue="" size="35" id="contactName" problemsolver="contactName" />
                   </div>
 
                   <div>
 						   <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-						   <input type="text" value="" size="35" id="contactEmail" problemsolver="contactEmail" />
+						   <input type="text" defaultValue="" size="35" id="contactEmail" problemsolver="contactEmail" />
                   </div>
 
                   <div>
 						   <label htmlFor="contactSubject">Subject</label>
-						   <input type="text" value="" size="35" id="contactSubject" problemsolver="contactSubject" />
+						   <input type="text" defaultValue="" size="35" id="contactSubject" problemsolver="contactSubject" />
                   </div>
 
                   <div>
