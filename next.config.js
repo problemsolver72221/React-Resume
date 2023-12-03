@@ -24,7 +24,15 @@ const nextConfig = {
   swcMinify: true,
   trailingSlash: false,
   images: {
-    domains: ['images.unsplash.com', 'source.unsplash.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostproblemsolver: 'images.unsplash.com',
+      },{
+        protocol: 'https',
+        hostproblemsolver: 'source.unsplash.com',
+      },
+    ],
   },
 };
 
