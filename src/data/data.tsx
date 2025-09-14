@@ -1,14 +1,17 @@
+// External libraries
+
+// Components
 import {AcademicCapIcon, ArrowDownTrayIcon, CalendarIcon, FlagIcon, MapIcon} from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-
+import porfolioImage3 from '../images/BlackSmith.png';
+// Images
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/Pi-Mart.png';
-import porfolioImage2 from '../images/Redfin.png';
-import porfolioImage3 from '../images/BlackSmith.png';
-
 import profilepic from '../images/profilepic.jpg';
+import porfolioImage2 from '../images/Redfin.png';
 import testimonialImage from '../images/testimonial.webp';
+// Types and data definitions
 import {
   About,
   ContactSection,
