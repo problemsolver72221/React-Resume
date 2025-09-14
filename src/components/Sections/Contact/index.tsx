@@ -1,5 +1,5 @@
 import {DevicePhoneMobileIcon, EnvelopeIcon, MapPinIcon} from '@heroicons/react/24/outline';
-import classNames from 'classproblemsolvers';
+import classNames from 'classnames';
 import {FC, memo} from 'react';
 
 import {contact, SectionId} from '../../../data/data';

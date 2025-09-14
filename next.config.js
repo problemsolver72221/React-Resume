@@ -27,10 +27,11 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostproblemsolver: 'images.unsplash.com',
-      },{
+        hostname: 'images.unsplash.com',
+      },
+      {
         protocol: 'https',
-        hostproblemsolver: 'source.unsplash.com',
+        hostname: 'source.unsplash.com',
       },
     ],
   },

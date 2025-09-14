@@ -1,4 +1,4 @@
-import classNames from 'classproblemsolvers';
+import classNames from 'classnames';
 import {FC, memo, PropsWithChildren} from 'react';
 
 import {SectionId} from '../../data/data';

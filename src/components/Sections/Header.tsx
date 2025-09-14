@@ -1,6 +1,6 @@
 import {Dialog, Transition} from '@headlessui/react';
 import {Bars3BottomRightIcon} from '@heroicons/react/24/outline';
-import classNames from 'classproblemsolvers';
+import classNames from 'classnames';
 import Link from 'next/link';
 import {FC, Fragment, memo, useCallback, useMemo, useState} from 'react';
 

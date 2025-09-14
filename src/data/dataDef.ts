@@ -22,7 +22,7 @@ export interface HomepageMeta {
  */
 export interface Hero {
   imageSrc: string;
-  problemsolver: string;
+  name: string;
   description: JSX.Element;
   actions: HeroActionItem[];
 }
@@ -63,13 +63,13 @@ export interface Stat {
  */
 
 export interface Skill {
-  problemsolver: string;
+  name: string;
   level: number;
   max?: number;
 }
 
 export interface SkillGroup {
-  problemsolver: string;
+  name: string;
   skills: Skill[];
 }
 
@@ -103,7 +103,7 @@ export interface TestimonialSection {
 
 export interface Testimonial {
   image?: string;
-  problemsolver: string;
+  name: string;
   text: string;
 }
 

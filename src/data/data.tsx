@@ -51,7 +51,7 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  problemsolver: `Royce Wayne.`,
+  name: `Royce Wayne.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -98,56 +98,56 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    problemsolver: 'Spoken languages',
+    name: 'Spoken languages',
     skills: [
       {
-        problemsolver: 'English',
+        name: 'English',
         level: 10,
       },
       {
-        problemsolver: 'French',
+        name: 'French',
         level: 4,
       },
       {
-        problemsolver: 'Spanish',
+        name: 'Spanish',
         level: 3,
       },
     ],
   },
   {
-    problemsolver: 'Frontend development',
+    name: 'Frontend development',
     skills: [
       {
-        problemsolver: 'React',
+        name: 'React',
         level: 9,
       },
       {
-        problemsolver: 'Typescript',
+        name: 'Typescript',
         level: 7,
       },
       {
-        problemsolver: 'Next.js',
+        name: 'Next.js',
         level: 9,
       },
       {
-        problemsolver: 'Angular',
+        name: 'Angular',
         level: 8,
       },
     ],
   },
   {
-    problemsolver: 'Backend development',
+    name: 'Backend development',
     skills: [
       {
-        problemsolver: 'Node.js',
+        name: 'Node.js',
         level: 10,
       },
       {
-        problemsolver: 'Rust',
+        name: 'Rust',
         level: 5,
       },
       {
-        problemsolver: 'Python',
+        name: 'Python',
         level: 4,
       },
     ],
@@ -236,17 +236,17 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      problemsolver: 'John Doe',
+      name: 'John Doe',
       text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
       // image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
     },
     {
-      problemsolver: 'Jane Doe',
+      name: 'Jane Doe',
       text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
       // image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
     },
     {
-      problemsolver: 'Someone else',
+      name: 'Someone else',
       text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
       // image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
@@ -278,7 +278,7 @@ export const contact: ContactSection = {
     },
     // {
     //   type: ContactType.Telegram,
-    //   text: 'problemsolver7s2221',
+    //   text: 'name7s2221',
     //   href: 'https://github.com/prsoblemsolver72221',
     // },
   ],

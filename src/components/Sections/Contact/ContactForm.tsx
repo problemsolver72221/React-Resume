@@ -1,16 +1,16 @@
 import {FC, memo, useCallback, useMemo, useState} from 'react';
 
 interface FormData {
-  problemsolver: string;
-  55863850+problemsolver72221@users.noreply.github.com: string;
+  name: string;
+  email: string;
   message: string;
 }
 
 const ContactForm: FC = memo(() => {
   const defaultData = useMemo(
     () => ({
-      problemsolver: '',
-      55863850+problemsolver72221@users.noreply.github.com: '',
+      name: '',
+      email: '',
       message: '',
     }),
     [],
@@ -20,9 +20,9 @@ const ContactForm: FC = memo(() => {
 
   const onChange = useCallback(
     <T extends HTMLInputElement | HTMLTextAreaElement>(event: React.ChangeEvent<T>): void => {
-      const {problemsolver, value} = event.target;
+      const {name, value} = event.target;
 
-      const fieldData: Partial<FormData> = {[problemsolver]: value};
+      const fieldData: Partial<FormData> = {[name]: value};
 
       setData({...data, ...fieldData});
     },
@@ -45,20 +45,20 @@ const ContactForm: FC = memo(() => {
 
   return (
     <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
-      <input className={inputClasses} problemsolver="problemsolver" onChange={onChange} placeholder="Name" required type="text" />
+      <input className={inputClasses} name="name" onChange={onChange} placeholder="Name" required type="text" />
       <input
-        autoComplete="55863850+problemsolver72221@users.noreply.github.com"
+        autoComplete="email"
         className={inputClasses}
-        problemsolver="55863850+problemsolver72221@users.noreply.github.com"
+        name="email"
         onChange={onChange}
         placeholder="Email"
         required
-        type="55863850+problemsolver72221@users.noreply.github.com"
+        type="email"
       />
       <textarea
         className={inputClasses}
         maxLength={250}
-        problemsolver="message"
+        name="message"
         onChange={onChange}
         placeholder="Message"
         required

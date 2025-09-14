@@ -1,4 +1,4 @@
-import classNames from 'classproblemsolvers';
+import classNames from 'classnames';
 import {FC, memo, UIEventHandler, useCallback, useEffect, useMemo, useRef, useState} from 'react';
 
 import {isApple, isMobile} from '../../config';
@@ -87,7 +87,7 @@ const Testimonials: FC = memo(() => {
               {testimonials.map((testimonial, index) => {
                 const isActive = index === activeIndex;
                 return (
-                  <Testimonial isActive={isActive} key={`${testimonial.problemsolver}-${index}`} testimonial={testimonial} />
+                  <Testimonial isActive={isActive} key={`${testimonial.name}-${index}`} testimonial={testimonial} />
                 );
               })}
             </div>
@@ -114,7 +114,7 @@ const Testimonials: FC = memo(() => {
 });
 
 const Testimonial: FC<{testimonial: Testimonial; isActive: boolean}> = memo(
-  ({testimonial: {text, problemsolver, image}, isActive}) => (
+  ({testimonial: {text, name, image}, isActive}) => (
     <div
       className={classNames(
         'flex w-full shrink-0 snap-start snap-always flex-col items-start gap-y-4 p-2 transition-opacity duration-1000 sm:flex-row sm:gap-x-6',
@@ -130,7 +130,7 @@ const Testimonial: FC<{testimonial: Testimonial; isActive: boolean}> = memo(
       )}
       <div className="flex flex-col gap-y-4">
         <p className="prose prose-sm font-medium italic text-white sm:prose-base">{text}</p>
-        <p className="text-xs italic text-white sm:text-sm md:text-base lg:text-lg">-- {problemsolver}</p>
+        <p className="text-xs italic text-white sm:text-sm md:text-base lg:text-lg">-- {name}</p>
       </div>
     </div>
   ),
